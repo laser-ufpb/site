@@ -1,0 +1,135 @@
+{
+	"solutions": [{
+		"instance_name": "tsp1",
+		"group_id": 1,
+		"group_name": "Grupo 1",
+		"group_members": "Joao, Alisson",
+		"group_members_short": "Joao, Alisson",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 2915,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp2",
+		"group_id": 1,
+		"group_name": "Grupo 1",
+		"group_members": "Joao, Alisson",
+		"group_members_short": "Joao, Alisson",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 1124,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp3",
+		"group_id": 1,
+		"group_name": "Grupo 1",
+		"group_members": "Joao, Alisson",
+		"group_members_short": "Joao, Alisson",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 4301,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp1",
+		"group_id": 2,
+		"group_name": "Grupo 2",
+		"group_members": "Ana, Pedro",
+		"group_members_short": "Ana, <br>Pedro",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 2600,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp2",
+		"group_id": 2,
+		"group_name": "Grupo 2",
+		"group_members": "Ana, Pedro",
+		"group_members_short": "Ana, <br>Pedro",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 2341,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp3",
+		"group_id": 2,
+		"group_name": "Grupo 2",
+		"group_members": "Ana, Pedro",
+		"group_members_short": "Ana, <br>Pedro",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 5412,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp1",
+		"group_id": 3,
+		"group_name": "Grupo 3",
+		"group_members": "Maria, Marcelo",
+		"group_members_short": "Maria, Marcelo",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 3423,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp2",
+		"group_id": 3,
+		"group_name": "Grupo 3",
+		"group_members": "Maria, Marcelo",
+		"group_members_short": "Maria, Marcelo",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 4343,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp3",
+		"group_id": 3,
+		"group_name": "Grupo 3",
+		"group_members": "Maria, Marcelo",
+		"group_members_short": "Maria, Marcelo",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 2313,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp1",
+		"group_id": 4,
+		"group_name": "Grupo 4",
+		"group_members": "Pedro, Alisson",
+		"group_members_short": "Pedro, Alisson",
+		"time_stamp": "2019-03-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 2600,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp2",
+		"group_id": 4,
+		"group_name": "Grupo 4",
+		"group_members": "Pedro, Alisson",
+		"group_members_short": "Pedro, Alisson",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 1324,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	},{
+		"instance_name": "tsp3",
+		"group_id": 4,
+		"group_name": "Grupo 4",
+		"group_members": "Pedro, Alisson",
+		"group_members_short": "Pedro, Alisson",
+		"time_stamp": "2019-04-01T13:50:04-03:00",
+		"solution_cost_user": 23,
+		"solution_cost_evaluated": 4324,
+		"solution_user": "0,1,2,3,4,0",
+		"solution": "0,1,2,3,4,0"
+	}]
+}
