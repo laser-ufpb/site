@@ -6219,7 +6219,6 @@ h6 {
 }
 #top-section-hero .jumbotron {
   position: relative;
-  left: 26px;
   color: #fff;
   background: 0;
 }
@@ -6250,6 +6249,11 @@ h6 {
 }
 #top-section .content-wrapper {
   padding-bottom: 0;
+}
+#top-section .jumbotron {
+  position: relative;
+  color: #fff;
+  background: 0;
 }
 
 #about .content .content-title {
