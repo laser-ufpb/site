@@ -1,1 +1,137 @@
-$(document).ready(function(){var u=50;function m(t,s){return t.solution_cost_evaluated<s.solution_cost_evaluated?-1:t.solution_cost_evaluated>s.solution_cost_evaluated?1:moment(t.time_stamp).isBefore(moment(s.time_stamp))?-1:moment(t.time_stamp).isAfter(moment(s.time_stamp))?1:0}function g(t,s){return t.points>s.points?-1:t.points<s.points?1:t.tsp1<s.tsp1?-1:t.tsp1>s.tsp1?1:t.tsp2<s.tsp2?-1:t.tsp2>s.tsp2?1:t.tsp3<s.tsp3?-1:t.tsp3>s.tsp3?1:0}$.ajax({dataType:"json",url:"/assets/tsp-cup/tsp-solutions.json",success:function(t){!function(t){for(var s={},o=[],e=[],p=[],r=[],i=0;i<t.length;i++)"tsp1"==t[i].instance_name?o.push(t[i]):"tsp2"==t[i].instance_name?e.push(t[i]):"tsp3"==t[i].instance_name&&p.push(t[i]),"group-"+t[i].group_id in s||(s["group-"+t[i].group_id]={group_id:t[i].group_id,group_name:t[i].group_name,group_members:t[i].group_members,group_members_short:t[i].group_members_short,points:0});o.sort(m),e.sort(m),p.sort(m);for(var i=0;i<o.length;i++){var n=s["group-"+o[i].group_id];n.points+=u-i,n.tsp1=o[i].solution_cost_evaluated}for(var i=0;i<e.length;i++){var n=s["group-"+e[i].group_id];n.points+=u-i,n.tsp2=e[i].solution_cost_evaluated}for(var i=0;i<p.length;i++){var n=s["group-"+p[i].group_id];n.points+=u-i,n.tsp3=p[i].solution_cost_evaluated}for(key in s)r.push(s[key]);r.sort(g);for(var a=$("#table-ranking tbody"),i=0;i<r.length;i++)a.append('<tr style="line-height: 32px"><th class="text-center">'+(0==i?'<img src="/img/icons/medal-gold.svg" height="32" alt="">':1==i?'<img src="/img/icons/medal-silver.svg" height="32" alt="">':2==i?'<img src="/img/icons/medal-bronze.svg" height="32" alt="">':i+1)+"</th><td>"+r[i].points+"</td><td>"+r[i].tsp1+" / "+r[i].tsp2+" / "+r[i].tsp3+"</td><td>"+r[i].group_name+"</td><td>"+r[i].group_members+"</td></tr>");$("#main-podium .podium-gold-group").html(r[0].group_members_short),$("#main-podium .podium-silver-group").html(r[1].group_members_short),$("#main-podium .podium-bronze-group").html(r[2].group_members_short)}(t.solutions),$("#rank-last-update").text("(Última atualização em "+t["last-updated-date"]+" às "+t["last-updated-time"]+")")}})});
+$(document).ready(function(){
+    var ranking_tsp = {};
+    var base_score = 50;
+
+
+    // -------------------------------------------
+    // Create the ranking for the instance 
+    readsJson();
+
+    function createRanking(solutions){
+        var groups = {};
+
+        // Create the ranking for each instance
+        var ranking_tsp1 = [];
+        var ranking_tsp2 = [];
+        var ranking_tsp3 = [];
+        var main_ranking = [];
+
+        for(var i = 0 ; i < solutions.length ; i++){
+            if(solutions[i].instance_name == "tsp1")
+                ranking_tsp1.push(solutions[i]);
+            else if(solutions[i].instance_name == "tsp2")
+                ranking_tsp2.push(solutions[i]);
+            else if(solutions[i].instance_name == "tsp3")
+                ranking_tsp3.push(solutions[i]);
+
+            if(!(('group-' + solutions[i].group_id) in groups)){
+                groups['group-' + solutions[i].group_id] = {
+                    'group_id': solutions[i].group_id,
+                    'group_name': solutions[i].group_name,
+                    'group_members': solutions[i].group_members,
+                    'group_members_short': solutions[i].group_members_short,
+                    'points': 0
+                };
+            }
+        }
+
+        ranking_tsp1.sort(compareSolutions);
+        ranking_tsp2.sort(compareSolutions);
+        ranking_tsp3.sort(compareSolutions);
+
+        // Evaluate the score of each group
+        for(var i = 0 ; i < ranking_tsp1.length ; i++){
+            var current_group = groups['group-' + ranking_tsp1[i].group_id];
+            current_group.points += base_score - i;
+            current_group.tsp1 = ranking_tsp1[i].solution_cost_evaluated;
+        }
+
+        for(var i = 0 ; i < ranking_tsp2.length ; i++){
+            var current_group = groups['group-' + ranking_tsp2[i].group_id];
+            current_group.points += base_score - i;
+            current_group.tsp2 = ranking_tsp2[i].solution_cost_evaluated;
+        }
+
+        for(var i = 0 ; i < ranking_tsp3.length ; i++){
+            var current_group = groups['group-' + ranking_tsp3[i].group_id];
+            current_group.points += base_score - i;
+            current_group.tsp3 = ranking_tsp3[i].solution_cost_evaluated;
+        }
+
+        
+        for(key in groups){
+            main_ranking.push(groups[key]);
+        }
+
+        main_ranking.sort(compareScores);
+
+        // Fill in the rank table
+        var table = $('#table-ranking tbody');
+        for(var i = 0 ; i < main_ranking.length ; i++){
+            table.append(
+                '<tr style="line-height: 32px">' + 
+                    '<th class="text-center">' + (i == 0 ? '<img src="/img/icons/medal-gold.svg" height="32" alt="">' : (i == 1 ? '<img src="/img/icons/medal-silver.svg" height="32" alt="">' : (i == 2 ? '<img src="/img/icons/medal-bronze.svg" height="32" alt="">' : (i + 1)))) + '</th>' + 
+                    '<td>' + main_ranking[i].points + '</td>' + 
+                    '<td>' + main_ranking[i].tsp1 + ' / ' + main_ranking[i].tsp2 + ' / ' + main_ranking[i].tsp3 + '</td>' + 
+                    '<td>' + main_ranking[i].group_name + '</td>' +
+                    '<td>' + main_ranking[i].group_members + '</td>' + 
+                '</tr>');
+        }
+
+        // Fill in the podium
+        $('#main-podium .podium-gold-group').html(main_ranking[0].group_members_short);
+        $('#main-podium .podium-silver-group').html(main_ranking[1].group_members_short);
+        $('#main-podium .podium-bronze-group').html(main_ranking[2].group_members_short);
+    }
+
+    function readsJson(){
+        $.ajax({
+            dataType: "json",
+            url: "/assets/tsp-cup/tsp-solutions.json",
+            success: function(data){
+                createRanking(data.solutions);
+
+                $('#rank-last-update').text('(Última atualização em ' + data['last-updated-date'] + ' às ' + data['last-updated-time'] + ')');
+            }
+        });
+    }
+
+    
+
+    function compareSolutions(sol_1, sol_2){
+        if(sol_1.solution_cost_evaluated < sol_2.solution_cost_evaluated)
+            return -1;
+        if(sol_1.solution_cost_evaluated > sol_2.solution_cost_evaluated)
+            return 1;
+        if(moment(sol_1.time_stamp).isBefore(moment(sol_2.time_stamp)))
+            return -1;
+        if(moment(sol_1.time_stamp).isAfter(moment(sol_2.time_stamp)))
+            return 1;
+        return 0;
+    }
+
+    function compareScores(score_1, score_2){
+        if(score_1.points > score_2.points)
+            return -1;
+        if(score_1.points < score_2.points)
+            return 1;
+
+        if(score_1.tsp1 < score_2.tsp1)
+            return -1;
+        if(score_1.tsp1 > score_2.tsp1)
+            return 1;
+
+        if(score_1.tsp2 < score_2.tsp2)
+            return -1;
+        if(score_1.tsp2 > score_2.tsp2)
+            return 1;
+
+        if(score_1.tsp3 < score_2.tsp3)
+            return -1;
+        if(score_1.tsp3 > score_2.tsp3)
+            return 1;
+
+        return 0;
+    }
+
+});
