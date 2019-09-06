@@ -1,0 +1,25 @@
+#name
+cvrp1
+
+#num_vertices
+5
+
+#num_vehicles
+2
+
+#capacity
+50
+
+#demands
+ 0    0 
+ 1   19 
+ 2   30 
+ 3   16 
+ 4   23 
+
+#coordinates
+0 30 40
+1 37 52
+2 49 49
+3 52 64
+4 31 62
