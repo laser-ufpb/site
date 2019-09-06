@@ -17,11 +17,11 @@ $(document).ready(function(){
         var main_ranking = [];
 
         for(var i = 0 ; i < solutions.length ; i++){
-            if(solutions[i].instance_name == "tsp1")
+            if(solutions[i].instance_name == "cvrp1")
                 ranking_tsp1.push(solutions[i]);
-            else if(solutions[i].instance_name == "tsp2")
+            else if(solutions[i].instance_name == "cvrp2")
                 ranking_tsp2.push(solutions[i]);
-            else if(solutions[i].instance_name == "tsp3")
+            else if(solutions[i].instance_name == "cvrp3")
                 ranking_tsp3.push(solutions[i]);
 
             if(!(('group-' + solutions[i].group_id) in groups)){
@@ -87,7 +87,7 @@ $(document).ready(function(){
     function readsJson(){
         $.ajax({
             dataType: "json",
-            url: "/assets/tsp-cup/tsp-solutions.json",
+            url: "/assets/cvrp-cup/cvrp-solutions.json",
             success: function(data){
                 createRanking(data.solutions);
 
