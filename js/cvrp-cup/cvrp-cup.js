@@ -57,7 +57,6 @@ $(document).ready(function(){
             current_group.points += base_score - i;
             current_group.tsp3 = ranking_tsp3[i].solution_cost_evaluated;
         }
-
         
         for(key in groups){
             main_ranking.push(groups[key]);
@@ -79,9 +78,9 @@ $(document).ready(function(){
         }
 
         // Fill in the podium
-        $('#main-podium .podium-gold-group').html(main_ranking[0].group_members_short);
-        $('#main-podium .podium-silver-group').html(main_ranking[1].group_members_short);
-        $('#main-podium .podium-bronze-group').html(main_ranking[2].group_members_short);
+        if(main_ranking.length > 0) $('#main-podium .podium-gold-group').html(main_ranking[0].group_members_short);
+        if(main_ranking.length > 1) $('#main-podium .podium-silver-group').html(main_ranking[1].group_members_short);
+        if(main_ranking.length > 2) $('#main-podium .podium-bronze-group').html(main_ranking[2].group_members_short);
     }
 
     function readsJson(){
