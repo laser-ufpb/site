@@ -1,1 +1,392 @@
-$(document).e(function(){var e=document.o("needs-validation");Array.prototype.filter.call(e,function(e){e.r("submit",function(t){t.n(),t.t(),e.a.add("was-validated"),!0===e.s()&&function(){$(this).i("d-none"),$("#btn-sending").i("d-none"),$("#container-alerts").l();var e=null,t=$("#select-group option:selected").u(),a=$("#select-group option:selected").c("name"),s=$("#select-group option:selected").c("members"),i=$("#select-group option:selected").c("members-short"),l=$("#textarea-solution").u(),u=$("#input-cost").u();switch(parseInt($("#select-instance option:selected").u())){case 1:e="cvrp1";break;case 2:e="cvrp2";break;case 3:e="cvrp3";break;case 4:e="cvrp4"}if(null==e)r("Alguma coisa saiu errado! Por favor, comunique o erro ao professor informando o código de erro.",1,60,10);else{var c=function(e,t,a){for(var s={d:!1,f:null,m:null},i=t.replace(/\s+/g,"").trim().split(";"),l=0;l<i.length;l++){i[l]=i[l].split(",");for(var u=0;u<i[l].length;u++)if(i[l][u]=parseInt(i[l][u]),isNaN(i[l][u]))return r("A solução informada não está no formato correto! Leia as instruções acima para descobrir como formatar sua solução.",1,15,null),n(),s}s.m="",i.join(";");for(var l=0;l<i.length;l++)s.m+=i[l].join(","),l+1!=i.length&&(s.m+=";");var c=function(e){var o={v:0,p:0,g:0,$:null,b:null};return $.h({y:"/assets/cvrp-cup/instances/"+e+".txt",_:!1,d:function(e){for(var r=e.split("\n"),n=0;n!=r.length;){if("#num_vertices"==r[n]){n++,o.v=parseInt(r[n]);break}n++}for(;n!=r.length;){if("#num_vehicles"==r[n]){n++,o.p=parseInt(r[n]);break}n++}for(;n!=r.length;){if("#capacity"==r[n]){n++,o.g=parseInt(r[n]);break}n++}for(;n!=r.length;){if("#demands"==r[n]){n++;break}n++}o.$=new Array(o.v);for(var t=0;t<o.v;t++){var a=r[n].replace(/\s+/g," ").trim().split(" ");o.$[t]=parseInt(a[1]),n++}for(;n!=r.length;){if("#coordinates"==r[n]){n++;break}n++}for(o.b=new Array(o.v),t=0;t<o.v;t++)a=r[n].replace(/\s+/g," ").trim().split(" "),o.b[t]=new Array(2),o.b[t][0]=parseFloat(a[1]),o.b[t][1]=parseFloat(a[2]),n++}}),o}(e);if(i.length<c.k)return r("O número de rotas não condiz com o número mínimo de rotas! Deveriam haver pelo menos <strong>"+c.p+" rotas </strong>. Leia as instruções acima para descobrir como formatar sua solução.",1,15,null),n(),s;for(var l=0;l<i.length;l++)if(i[l][0]!=i[l][i[l].length-1])return r("Rota número "+(l+1)+" inviável, o primeiro vértice deve ser igual ao último!",1,15,null),n(),s;for(var d=new Array(c.v).fill(!1),f=0;f<i.length;f++)for(var m=0,l=1;l<i[f].length-1;l++){if(i[f][l]>=c.v||i[f][l]<0)return r("Solução inviável! Na rota "+(f+1)+", o cliente "+i[f][l]+" não existe!",1,15,null),n(),s;if(d[i[f][l]])return r("Solução inviável! Na rota "+(f+1)+" o cliente "+i[f][l]+" é visitado mais de uma vez!",1,15,null),n(),s;if((m+=c.$[i[f][l]])>c.g)return r("Solução inviável! Na rota "+(f+1)+" a capacidade do veículo é excedida!",1,15,null),n(),s;d[i[f][l]]=!0}for(var f=1;f<c.v;f++)if(!d[f])return r("Solução inviável! O cliente "+f+" nunca é visitado!",1,15,null),n(),s;for(var v=0,f=0;f<i.length;f++)for(var l=0;l<i[f].length-1;l++){var p=c.b[i[f][l]][0],g=c.b[i[f][l]][1],b=c.b[i[f][l+1]][0],h=c.b[i[f][l+1]][1];v+=o(p,g,b,h)}v!=a&&r("A solução informada possui valor <strong>"+v+"</strong>, mas foi informado "+a+". Note que iremos considerar o valor correto, mas isso pode indicar um bug em seu código.",2,15,null);return s.d=!0,s.f=v,$("#textarea-solution").w("is-invalid"),s}(e,l,u);if(c.d&&$("#alert-successfully-sent").A("d-none")){var d='Solution:\n{\n\t"solution": {\n\t\t"instance_name": "'+e+'",\n\t\t"group_id": '+t+',\n\t\t"group_name": "'+a+'",\n\t\t"group_members": "'+s+'",\n\t\t"group_members_short": "'+i+'",\n\t\t"time_stamp": "'+moment().x()+'",\n\t\t"solution_cost_user": '+u+',\n\t\t"solution_cost_evaluated": '+c.f+',\n\t\t"solution_user": "'+l+'",\n\t\t"solution": "'+c.m+'"\n\t}\n}';$.h({N:"POST",y:"https://hooks.zapier.com/hooks/catch/5750378/o2ukzbb/",c:{message:d,S:t},d:function(){console.log("Sent!"),$("#alert-successfully-sent").w("d-none"),setTimeout(function(){$("#alert-successfully-sent").I("d-none")},1e4)},z:function(){r("Não foi possível enviar sua solução. Por favor entre em contato com o professor para reportar o erro!",1,60,null)},M:"json"})}}$(this).i("d-none"),$("#btn-sending").i("d-none")}()},!1)});function o(e,o,r,n){return Math.round(Math.sqrt(Math.pow(e-r,2)+Math.pow(o-n,2)))}function r(e,o,r,n){var t=$('<div class="alert alert-'+(1==o?"danger":"warning")+' alert-dismissible fade show" role="alert"></div>').T("<strong>"+(1==o?"Erro":"Aviso")+(null!=n?" "+n:"")+":</strong> "+e).T('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');$("#container-alerts").T(t),setTimeout(function(){t.O()},1e3*r)}function n(){$("#form-tsp-cup-submit").w("was-validated"),$("#textarea-solution").A("is-invalid")||$("#textarea-solution").I("is-invalid").w("is-valid")}$("#alert-successfully-sent .close").P("click",function(e){return e.n(),$("#alert-successfully-sent").A("d-none")||$("#alert-successfully-sent").I("d-none"),!1})});
+$(document).ready(function(){
+    var num_vertices = 0;
+    var coordinates = null;
+    var distances = null;
+    var current_instance = null;
+
+    
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            form.classList.add('was-validated');
+
+            if(form.checkValidity() === true)
+                callValidation();
+            
+        }, false);
+    });
+
+
+    /****************************************************************************************
+     * 
+     * FUNCTION callValidation
+     * 
+     ****************************************************************************************/
+    function callValidation(){
+        $(this).toggleClass('d-none');
+        $('#btn-sending').toggleClass('d-none');
+
+        $('#container-alerts').empty();
+
+        var instance_name = null;
+        var group_id = $('#select-group option:selected').val();
+        var group_name = $('#select-group option:selected').data("name");
+        var group_members = $('#select-group option:selected').data("members");
+        var group_members_short = $('#select-group option:selected').data("members-short");
+        var solution_str = $('#textarea-solution').val();
+        var solution_cost_user = $('#input-cost').val();
+
+        switch(parseInt($('#select-instance option:selected').val())){
+            case 1:
+                instance_name = 'cvrp1';
+                break;
+            case 2:
+                instance_name = 'cvrp2';
+                break;
+            case 3:
+                instance_name = 'cvrp3';
+                break;
+            // --- DEBUG ONLY ---
+            case 4:
+                instance_name = 'cvrp4';
+                break;
+            // --- DEBUG ONLY ---
+        }
+
+        if(instance_name == null){
+            alertUser('Alguma coisa saiu errado! Por favor, comunique o erro ao professor informando o código de erro.', 1, 60, 10);
+        }
+        else{
+            var result = validateSolution(instance_name, solution_str, solution_cost_user);
+            if(result.success){
+                if($('#alert-successfully-sent').hasClass('d-none')){
+                    
+
+                    
+                    // Prepare the email
+                    var message_str = "Solution:\n" +
+                        "{\n" + 
+                        "\t\"solution\": {\n" + 
+                        "\t\t\"instance_name\": \"" + instance_name + "\",\n" +  
+                        "\t\t\"group_id\": " + group_id + ",\n" +  
+                        "\t\t\"group_name\": \"" + group_name + "\",\n" +  
+                        "\t\t\"group_members\": \"" + group_members + "\",\n" +  
+                        "\t\t\"group_members_short\": \"" + group_members_short + "\",\n" +  
+                        "\t\t\"time_stamp\": \"" + moment().format() + "\",\n" +  
+                        "\t\t\"solution_cost_user\": " + solution_cost_user + ",\n" + 
+                        "\t\t\"solution_cost_evaluated\": " + result.cost_evaluated + ",\n" + 
+                        "\t\t\"solution_user\": \"" + solution_str + "\",\n" + 
+                        "\t\t\"solution\": \"" + result.solution + "\"\n" + 
+                        "\t}\n" + 
+                        "}";
+
+                        $.ajax({
+                            type: "POST",
+                            url: "https://hooks.zapier.com/hooks/catch/5750378/o2ukzbb/",
+                            data: { 'message': message_str, 'group': group_id},
+                            success: function(){
+                                console.log("Sent!");
+                                // Show the success message
+                                $('#alert-successfully-sent').removeClass('d-none');
+
+                                // Hide the message after 10 seconds
+                                setTimeout(function(){
+                                    $('#alert-successfully-sent').addClass('d-none');
+                                }, 10000);
+
+                            },
+                            error: function(){
+                                alertUser("Não foi possível enviar sua solução. Por favor entre em contato com o professor para reportar o erro!",  1, 60, null);
+                            },
+                            dataType: "json"
+                          });
+
+                    
+                }
+            }
+        }
+
+        $(this).toggleClass('d-none');
+        $('#btn-sending').toggleClass('d-none');
+    };
+
+    // -------------------------------------------
+    // EVENT when the success message is closed
+    $('#alert-successfully-sent .close').on('click', function(e){
+        e.preventDefault();
+        
+        if(!$('#alert-successfully-sent').hasClass('d-none'))
+            $('#alert-successfully-sent').addClass('d-none');
+
+        return false;
+    });
+
+    /****************************************************************************************
+     * 
+     * FUNCTION validateSolution
+     * 
+     ****************************************************************************************/
+    function validateSolution(instance_name, solution_str, solution_cost){
+        var result = {
+            'success': false,
+            'cost_evaluated' : null,
+            'solution': null
+        }
+
+        // -------------------------------------------
+        // First parse the solution and check if its format is valid
+        var solution = solution_str.replace(/\s+/g,'').trim().split(';');
+        for(var i = 0 ; i < solution.length ; i++){
+            // Parse each route
+            solution[i] = solution[i].split(',');
+
+            for(var j = 0 ; j < solution[i].length ; j++){
+                solution[i][j] = parseInt(solution[i][j]);
+                
+                if(isNaN(solution[i][j])){
+                    alertUser("A solução informada não está no formato correto! Leia as instruções acima para descobrir como formatar sua solução.", 1, 15, null);
+                    setSolutionFieldInvalid();
+                    return result;
+                }
+            }
+        }
+
+        result.solution = "";solution.join(';');
+        for(var i = 0 ; i < solution.length ; i++){
+            result.solution += solution[i].join(',');
+            if(i+1 != solution.length)
+                result.solution += ";";
+        }
+        
+        // -------------------------------------------
+        // If the format is ok, read the instance
+        var instance = readInstance(instance_name);
+
+        // -------------------------------------------
+        // Some simple checks
+        if(solution.length < instance.num_vehices){
+            alertUser("O número de rotas não condiz com o número mínimo de rotas! Deveriam haver pelo menos <strong>" + (instance.num_vehicles) + " rotas </strong>. Leia as instruções acima para descobrir como formatar sua solução.", 1, 15, null)
+            setSolutionFieldInvalid();
+            return result;
+        }
+        
+        for(var i = 0 ; i < solution.length ; i++)
+            if(solution[i][0] != solution[i][solution[i].length-1]){
+                alertUser("Rota número " + (i+1) + " inviável, o primeiro vértice deve ser igual ao último!", 1, 15, null);
+                setSolutionFieldInvalid();
+                return result;
+            }
+
+        // -------------------------------------------
+        // Check if the vehicle capacity is respected and if a vertex is visited more than once
+        var is_visited = new Array(instance.num_vertices).fill(false);
+        for(var k = 0 ; k < solution.length ; k++){
+            var total_demand = 0;
+            for(var i = 1 ; i < solution[k].length - 1; i++){
+                // Make sure the current vertex is valid
+                if(solution[k][i] >= instance.num_vertices || solution[k][i] < 0){
+                    alertUser("Solução inviável! Na rota " + (k+1) + ", o cliente " + solution[k][i] + " não existe!", 1, 15, null);
+                    setSolutionFieldInvalid();
+                    return result;
+                }
+
+                // Check if the current vertex has already been visited
+                if(is_visited[solution[k][i]]){
+                    alertUser("Solução inviável! Na rota " + (k+1) + " o cliente " + solution[k][i] + " é visitado mais de uma vez!", 1, 15, null);
+                    setSolutionFieldInvalid();
+                    return result;
+                }
+
+                // Check if the demand has been violated
+                total_demand += instance.demands[solution[k][i]]; // Update the total demand of the route
+                if(total_demand > instance.capacity){
+                    alertUser("Solução inviável! Na rota " + (k+1) + " a capacidade do veículo é excedida!", 1, 15, null);
+                    setSolutionFieldInvalid();
+                    return result;
+                }
+
+
+                is_visited[solution[k][i]] = true;
+            }
+        }
+
+        // -------------------------------------------
+        // Check if all clientes have been visited
+        for(var k = 1 ; k < instance.num_vertices ; k++){
+            if(!is_visited[k]){
+                alertUser("Solução inviável! O cliente " + k + " nunca é visitado!", 1, 15, null);
+                setSolutionFieldInvalid();
+                return result;
+            }
+        }
+
+        // -------------------------------------------
+        // Evaluate the cost of the solution
+        var solution_cost_double_check = 0;
+        for(var k = 0 ; k < solution.length ; k++){
+            for(var i = 0 ; i < solution[k].length - 1; i++){
+                var x1 = instance.coordinates[solution[k][i]][0];
+                var y1 = instance.coordinates[solution[k][i]][1];
+                var x2 = instance.coordinates[solution[k][i+1]][0];
+                var y2 = instance.coordinates[solution[k][i+1]][1];
+
+                // console.log("p" + solution[k][i] + " = (" + x1 + ", " + y1 + ")");
+                // console.log("p" + solution[k][i+1] + " = (" + x2 + ", " + y2 + ")");
+                // console.log("distance(p1,p2) = " + evaluateDistance(x1, y1, x2, y2));
+                solution_cost_double_check += evaluateDistance(x1, y1, x2, y2);
+            }
+        }
+
+        // -------------------------------------------
+        // Make sure the cost informed by the user is the same as the one that was evaluated
+        if(solution_cost_double_check != solution_cost){
+            alertUser("A solução informada possui valor <strong>" + solution_cost_double_check + "</strong>, mas foi informado " + solution_cost + ". Note que iremos considerar o valor correto, mas isso pode indicar um bug em seu código.", 2, 15, null);
+        }
+
+        result.success = true;
+        result.cost_evaluated = solution_cost_double_check;
+        $('#textarea-solution').removeClass('is-invalid')
+
+        return result;
+    }
+    
+    
+    /****************************************************************************************
+     * 
+     * FUNCTION readInstance
+     * 
+     ****************************************************************************************/
+    function readInstance(instance_name){
+        var instance = {
+            'num_vertices': 0,
+            'num_vehicles': 0,
+            'capacity': 0,
+            'demands': null,
+            'coordinates': null
+        }
+
+        $.ajax({
+            url: '/assets/cvrp-cup/instances/' + instance_name + '.txt',
+            async: false,
+            success: function(result){
+                var rows = result.split('\n');
+                var index_row = 0;
+
+                // -------------------------------------------
+                // Find the number of vertices
+                while(index_row != rows.length){
+                    if(rows[index_row] == "#num_vertices"){
+                        index_row++;
+                        instance.num_vertices = parseInt(rows[index_row]);
+                        break;
+                    }
+                    index_row++;
+                }
+
+                // -------------------------------------------
+                // Find the number of vehicles
+                while(index_row != rows.length){
+                    if(rows[index_row] == "#num_vehicles"){
+                        index_row++;
+                        instance.num_vehicles = parseInt(rows[index_row]);
+                        break;
+                    }
+                    index_row++;
+                }
+
+                // -------------------------------------------
+                // Find the vehicle capacity
+                while(index_row != rows.length){
+                    if(rows[index_row] == "#capacity"){
+                        index_row++;
+                        instance.capacity = parseInt(rows[index_row]);
+                        break;
+                    }
+                    index_row++;
+                }
+
+                // -------------------------------------------
+                // Read the demands
+                while(index_row != rows.length){
+                    if(rows[index_row] == "#demands"){
+                        index_row++;
+                        break;
+                    }
+                    index_row++;
+                }
+
+                instance.demands = new Array(instance.num_vertices);
+                for(var i = 0 ; i < instance.num_vertices ; i++){
+                    var values = rows[index_row].replace(/\s+/g,' ').trim().split(' ');
+                    instance.demands[i] = parseInt(values[1]);
+                    index_row++;
+                }
+
+                // -------------------------------------------
+                // Read the coordinates
+                while(index_row != rows.length){
+                    if(rows[index_row] == "#coordinates"){
+                        index_row++;
+                        break;
+                    }
+                    index_row++;
+                }
+
+                instance.coordinates = new Array(instance.num_vertices);
+                for(var i = 0 ; i < instance.num_vertices ; i++){
+                    var values = rows[index_row].replace(/\s+/g,' ').trim().split(' ');
+                    instance.coordinates[i] = new Array(2);
+                    instance.coordinates[i][0] = parseFloat(values[1]);
+                    instance.coordinates[i][1] = parseFloat(values[2]);
+                    index_row++;
+                }
+            }
+        });
+
+        return instance;
+    }
+
+    /****************************************************************************************
+     * 
+     * FUNCTION evaluateDistance
+     * 
+     ****************************************************************************************/
+    function evaluateDistance(x1, y1, x2, y2){
+        return Math.round(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)))
+    }
+
+    /****************************************************************************************
+     * 
+     * FUNCTION alertUser
+     * 
+     ****************************************************************************************/
+    function alertUser(message, type, dismiss_time, codigo){
+        var $alert = $('<div class="alert alert-' + (type == 1 ? 'danger' : 'warning') + ' alert-dismissible fade show" role="alert"></div>')
+                        .append('<strong>' + (type == 1 ? 'Erro' : 'Aviso') + (codigo != null ? (' ' + codigo) : '') + ':</strong> ' + message)
+                        .append('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
+
+        $('#container-alerts').append($alert);
+
+        // Remove the message after 10 seconds
+        setTimeout(function(){
+            $alert.remove();
+        }, dismiss_time * 1000);
+    }
+
+    /****************************************************************************************
+     * 
+     * FUNCTION setSolutionFieldInvalid
+     * 
+     ****************************************************************************************/
+    function setSolutionFieldInvalid(){
+        $('#form-tsp-cup-submit').removeClass('was-validated');
+        if(!$('#textarea-solution').hasClass('is-invalid')){
+            $('#textarea-solution').addClass('is-invalid').removeClass('is-valid');
+        }
+    }
+});
