@@ -1,0 +1,65 @@
+{
+	"produtores": [{
+		"nome": "Maria",
+		"telefone": "(83) 9 1111-1111",
+		"entrega": ["Sexta-Feira (07h-11h)"],
+		"produtos": [{
+				"nome": "Tempero",
+				"unidade": "pacote",
+				"preco": "3,00"
+			},
+			{
+				"nome": "Cheiro Verde",
+				"unidade": "molho",
+				"preco": "2,50"
+			},
+			{
+				"nome": "Colve",
+				"unidade": "molho",
+				"preco": "2,30"
+			}
+		]
+    },
+    {
+        "nome": "Joao",
+		"telefone": "(83) 9 1111-1111",
+		"entrega": ["Terça-Feira (07h-11h)"],
+		"produtos": [{
+				"nome": "Milho",
+				"unidade": "pacote",
+				"preco": "3,00"
+			},
+			{
+				"nome": "Feijão",
+				"unidade": "molho",
+				"preco": "2,50"
+			},
+			{
+				"nome": "Colve",
+				"unidade": "molho",
+				"preco": "2,30"
+			}
+        ]
+    },
+    {
+        "nome": "Ana",
+		"telefone": "(83) 9 1111-1111",
+		"entrega": ["Segunda-Feira (07h-11h)", "Quarta-Feira (12h-16h)"],
+		"produtos": [{
+				"nome": "Repolho",
+				"unidade": "unidade",
+				"preco": "3,00"
+			},
+			{
+				"nome": "Agrião",
+				"unidade": "molho",
+				"preco": "2,50"
+			},
+			{
+				"nome": "Tomate",
+				"unidade": "kg",
+				"preco": "2,30"
+			}
+        ]
+    }]
+}
