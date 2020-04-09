@@ -9,8 +9,12 @@ $(document).ready(function(){
             
             for(var i = 0 ; i < data.produtores.length ; i++){
                 var row = $("<tr></tr>")
-                    .append("<th>" + data.produtores[i].nome + "</th>")
-                    .append("<td>" + data.produtores[i].telefone + "</td>");
+                    .append("<th>" + data.produtores[i].nome + "</th>");
+
+                if(data.produtores[i].wa)
+                    row.append("<td>" + data.produtores[i].telefone + "<i class=\"fab fa-whatsapp ml-2\" style=\"color: #2ecc71;\"></i></td>");
+                else
+                    row.append("<td>" + data.produtores[i].telefone + "</td>");
 
                 var  entrega = ""
                     ,produtos = ""
@@ -26,7 +30,11 @@ $(document).ready(function(){
                 for(var j = 0 ; j < data.produtores[i].produtos.length ; j++){
                     produtos += data.produtores[i].produtos[j].nome;
                     unidades += data.produtores[i].produtos[j].unidade;
-                    valores += "R$ " + data.produtores[i].produtos[j].preco;
+
+                    if(data.produtores[i].produtos[j].preco == "-")
+                        valores += "A combinar";
+                    else
+                        valores += "R$ " + data.produtores[i].produtos[j].preco;
 
                     if(j != data.produtores[i].produtos.length - 1){
                         produtos += "</br>";
