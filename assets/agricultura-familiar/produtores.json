@@ -193,7 +193,7 @@
         "entrega": ["A combinar"],
         "wa": true,
 		"produtos": [{
-				"nome": "Polpa de drutas variadas",
+				"nome": "Polpa de frutas variadas",
 				"unidade": "unidade",
 				"preco": "-"
 			}
@@ -204,7 +204,7 @@
         "entrega": ["A combinar"],
         "wa": true,
 		"produtos": [{
-				"nome": "Polpa de drutas variadas",
+				"nome": "Polpa de frutas variadas",
 				"unidade": "unidade",
 				"preco": "-"
 			}
