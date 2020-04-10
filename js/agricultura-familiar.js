@@ -43,11 +43,13 @@ $(document).ready(function(){
                 for(var j = 0 ; j < data.produtores[i].produtos.length ; j++){
                     produtos += data.produtores[i].produtos[j].nome;
                     unidades += data.produtores[i].produtos[j].unidade;
-
-                    if(data.produtores[i].produtos[j].preco == "-")
-                        valores += "A combinar";
-                    else
-                        valores += "R$ " + data.produtores[i].produtos[j].preco;
+                    
+                    if(data.produtores.tem_preco){
+                        if(data.produtores[i].produtos[j].preco == "-")
+                            valores += "A combinar";
+                        else
+                            valores += "R$ " + data.produtores[i].produtos[j].preco;
+                    }
 
                     if(j != data.produtores[i].produtos.length - 1){
                         produtos += "</br>";
@@ -55,6 +57,9 @@ $(document).ready(function(){
                         valores += "</br>";
                     }
                 }
+
+                if(!data.produtores[i].tem_preco)
+                    valores = "A combinar";
 
                 row
                     .append("<td>" + entrega + "</td>")
