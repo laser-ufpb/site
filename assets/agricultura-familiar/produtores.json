@@ -3,6 +3,7 @@
 		"nome": "João Trajano",
 		"telefone": "(83) 98102-4704",
         "entrega": ["A combinar"],
+        "municipio": "Alhandra",
         "wa": true,
 		"produtos": [{
 				"nome": "Inhame",
@@ -39,6 +40,7 @@
 		"nome": "Everaldo Júnior",
 		"telefone": "(83) 98862-5342",
         "entrega": ["A combinar"],
+        "municipio": "Mamanguape",
         "wa": true,
 		"produtos": [{
 				"nome": "Coco verde",
@@ -70,6 +72,7 @@
 		"nome": "Lúcia Rocha",
 		"telefone": "(83) 98626-9072",
         "entrega": ["A combinar"],
+        "municipio": "João Pessoa",
         "wa": true,
 		"produtos": [{
 				"nome": "Ovo caipira",
@@ -96,6 +99,7 @@
 		"nome": "Tereza Beatriz",
 		"telefone": "(83) 98812-4319",
         "entrega": ["A combinar"],
+        "municipio": "Cabedelo",
         "wa": true,
 		"produtos": [{
 				"nome": "Mudas de ervas medicinais",
@@ -117,6 +121,7 @@
 		"nome": "Anailde de Lima",
 		"telefone": "(83) 98776-9942",
         "entrega": ["A combinar"],
+        "municipio": "João Pessoa",
         "wa": true,
 		"produtos": [{
 				"nome": "Ovos de páscoa diversos",
@@ -133,6 +138,7 @@
 		"nome": "Iracema Ferreira",
 		"telefone": "(83) 99841-4836",
         "entrega": ["A combinar"],
+        "municipio": "João Pessoa",
         "wa": true,
 		"produtos": [{
 				"nome": "Canjica",
@@ -159,6 +165,7 @@
 		"nome": "Nathan José",
 		"telefone": "(83) 98646-9805",
         "entrega": ["A combinar"],
+        "municipio": "Pedras de Fogo",
         "wa": true,
 		"produtos": [{
 				"nome": "Farinha de mandioca",
@@ -180,6 +187,7 @@
 		"nome": "Célia Maria",
 		"telefone": "(83) 98771-9521",
         "entrega": ["A combinar"],
+        "municipio": "João Pessoa",
         "wa": true,
 		"produtos": [{
 				"nome": "Pães integrais",
@@ -191,6 +199,7 @@
 		"nome": "Silvo Carlos",
 		"telefone": "(83) 99691-6944",
         "entrega": ["A combinar"],
+        "municipio": "Pitimbú",
         "wa": true,
 		"produtos": [{
 				"nome": "Polpa de frutas variadas",
@@ -202,6 +211,7 @@
 		"nome": "Sérgio Marcos",
 		"telefone": "(83) 98888-0568",
         "entrega": ["A combinar"],
+        "municipio": "Alhandra",
         "wa": true,
 		"produtos": [{
 				"nome": "Polpa de frutas variadas",
@@ -213,6 +223,7 @@
 		"nome": "Telma Santana ",
 		"telefone": "(83) 98886-8409",
         "entrega": ["A combinar"],
+        "municipio": "Baía da Traição",
         "wa": true,
 		"produtos": [{
 				"nome": "Peixes diversos",
@@ -228,6 +239,7 @@
 		"nome": "Eliane e Rogerio",
 		"telefone": "(83) 98671-9347",
         "entrega": ["A combinar"],
+        "municipio": "Fagundes",
         "wa": true,
 		"produtos": [{
 				"nome": "Queijo coalho",
@@ -251,6 +263,7 @@
 		"nome": "Elizabethe Romao",
 		"telefone": "(83) 99307-0000",
         "entrega": ["A combinar"],
+        "municipio": "João Pessoa",
         "wa": true,
 		"produtos": [{
 				"nome": "Legumes",
@@ -274,6 +287,7 @@
 		"nome": "Everaldo Nunes",
 		"telefone": "(83) 99900-0202",
         "entrega": ["A combinar"],
+        "municipio": "Sapé",
         "wa": true,
 		"produtos": [{
 				"nome": "Ervas medicinais",
@@ -285,6 +299,7 @@
 		"nome": "Francisco Guerra",
 		"telefone": "(83) 98848-3673",
         "entrega": ["A combinar"],
+        "municipio": "Natuba",
         "wa": true,
 		"produtos": [{
 				"nome": "Uva isabel",

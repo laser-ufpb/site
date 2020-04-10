@@ -9,7 +9,8 @@ $(document).ready(function(){
             
             for(var i = 0 ; i < data.produtores.length ; i++){
                 var row = $("<tr></tr>")
-                    .append("<th>" + data.produtores[i].nome + "</th>");
+                    .append("<th>" + data.produtores[i].nome + "</th>")
+                    .append("<td>" + data.produtores[i].municipio + "</td>");
 
                 if(data.produtores[i].wa)
                     row.append("<td>" + data.produtores[i].telefone + "<i class=\"fab fa-whatsapp ml-2\" style=\"color: #2ecc71;\"></i></td>");
@@ -55,6 +56,7 @@ $(document).ready(function(){
             initDataTables();
         }
     });
+        
 
     function initDataTables(){
         var table = $('#table-products').DataTable({
