@@ -342,7 +342,7 @@
         "tem_precos": false,
         "wa": true,
 		"produtos": [{
-				"nome": "Pimentas raras (Carolina, Reaper, Trindad Scorpions)",
+				"nome": "Pimentas raras <br/>(Carolina, Reaper, Trindad Scorpions)",
 				"unidade": "unidade",
 				"preco": "-"
 			},{
