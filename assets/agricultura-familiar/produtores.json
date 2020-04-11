@@ -334,5 +334,60 @@
 				"preco": "-"
 			}
 		]
+    },{
+		"nome": "Nicinha",
+		"telefone": "(83) 99686-8462",
+        "entrega": ["A combinar"],
+        "municipio": "Pedro Regis",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Pimentas raras (Carolina, Reaper, Trindad Scorpions)",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Cactos e suculentas",
+				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Seu Zu",
+		"telefone": "(83) 98835-0265",
+        "entrega": ["A combinar"],
+        "municipio": "Jacaraú",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Mel",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Ovos de Capoeira",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Galinha Caipira",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Castanha",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Rosinete",
+		"telefone": "(83) 98851-7795",
+        "entrega": ["A combinar"],
+        "municipio": "Jacaraú",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Castanhas",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
     }]
 }
