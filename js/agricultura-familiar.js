@@ -19,6 +19,7 @@ $(document).ready(function(){
         success: function(data){
             var table_elem = $("#table-products");
             
+            var produtores = [];
             for(var i = 0 ; i < data.produtores.length ; i++){
                 var row = $("<tr></tr>")
                     .append("<th>" + data.produtores[i].nome + "</th>")
@@ -67,8 +68,14 @@ $(document).ready(function(){
                     .append("<td>" + unidades + "</td>")
                     .append("<td>" + valores + "</td>");
 
-                    table_elem.append(row);
+                produtores.push(row);
             }
+
+            // Shuffle array
+            produtores = shuffle(produtores);
+
+            for(var i = 0 ; i < produtores.length ; i++)
+                table_elem.append(produtores[i]);
 
             initDataTables();
         }
@@ -93,5 +100,23 @@ $(document).ready(function(){
             table.search($(this).val()).draw() ;
         })
     }
+
+    function shuffle(array) {
+        var m = array.length, t, i;
+      
+        // While there remain elements to shuffle…
+        while (m) {
+      
+          // Pick a remaining element…
+          i = Math.floor(Math.random() * m--);
+      
+          // And swap it with the current element.
+          t = array[m];
+          array[m] = array[i];
+          array[i] = t;
+        }
+      
+        return array;
+      }
     
 });
