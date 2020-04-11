@@ -6426,7 +6426,6 @@ h6 {
 }
 #team .card img {
   max-width: 150px;
-  max-height: 150px;
 }
 #team .card .ai {
   color: #6c757d;
@@ -7662,7 +7661,6 @@ h6 {
 
   #team .card {
     max-width: calc(33% - 30px);
-    max-height: calc(33% - 30px);
   }
 }
 
