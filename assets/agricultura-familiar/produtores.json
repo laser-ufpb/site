@@ -389,5 +389,64 @@
 				"preco": "-"
 			}
 		]
+    },{
+		"nome": "Valmir",
+		"telefone": "(83) 99805-8876",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Cajá",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Ovos de Capoeira",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Galinha Caipira",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Coco seco",
+				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Dona Severina",
+		"telefone": "(83) 98827-8872",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Ovos de Capoeira",
+				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Leonardo",
+		"telefone": "(83) 98649-5441",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Hortaliças em geral",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Mamão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Banana",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
     }]
 }
