@@ -5,29 +5,26 @@ $(document).ready(function(){
     // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function(form) {
         form.addEventListener('submit', function(event) {
-            if(form.checkValidity() === false) {
-                event.preventDefault();
+            event.preventDefault();
             event.stopPropagation();
+            if(form.checkValidity() === true){
+                var form_contact = $("#form-contact");
+                var url = form_contact.attr('action');
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: form_contact.serialize(), // serializes the form's elements.
+                    success: function(data){
+                        $("#modal-msg-sent").modal('show');
+                        setTimeout(function(){
+                            $("#modal-msg-sent").modal('hide');
+                        }, 10000);
+                    }
+                }); 
             }
+                
             form.classList.add('was-validated');
         }, false);
-    });
-
-    $("#form-contact").submit(function(e) {
-        e.preventDefault(); // avoid to execute the actual submit of the form.
-        var form = $(this);
-        var url = form.attr('action');
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: form.serialize(), // serializes the form's elements.
-            success: function(data){
-                $("#modal-msg-sent").modal('show');
-                setTimeout(function(){
-                    $("#modal-msg-sent").modal('hide');
-                }, 10000);
-            }
-        }); 
     });
 
     $.ajax({
