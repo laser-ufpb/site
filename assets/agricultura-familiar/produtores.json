@@ -178,21 +178,39 @@
 				"nome": "Farinha de mandioca",
 				"unidade": "kg",
 				"preco": "-"
-			},
-			{
-				"nome": "Farinha branca",
+			},{
+				"nome": "Goma de tapioca",
 				"unidade": "kg",
 				"preco": "-"
-			},
-			{
-				"nome": "Goma de tapioca",
+            },{
+				"nome": "Goma para tapioca",
+				"unidade": "kg",
+				"preco": "-"
+            },{
+				"nome": "Massa de mandioca",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Castanha do Pará",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Amendoim torrado sem pele e sem sal",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Tareco",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolachas artesanais",
 				"unidade": "kg",
 				"preco": "-"
 			}
 		]
     },{
 		"nome": "Célia Maria",
-		"telefone": "(83) 98771-9521",
+		"telefone": "(83) 99627-1873",
         "entrega": ["A combinar"],
         "municipio": "João Pessoa",
         "tem_precos": false,
@@ -273,7 +291,7 @@
 		]
     },{
 		"nome": "Elizabethe Romao",
-		"telefone": "(83) 99307-0000",
+		"telefone": "(83) 99146-2781",
         "entrega": ["A combinar"],
         "municipio": "João Pessoa",
         "tem_precos": false,
@@ -444,6 +462,31 @@
 				"preco": "-"
 			},{
 				"nome": "Banana",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Madalena",
+		"telefone": "(83) 99409-0948",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Legumes",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Hortaliças",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Tuberculos",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Frutas",
 				"unidade": "kg",
 				"preco": "-"
 			}
