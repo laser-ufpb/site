@@ -36,53 +36,23 @@ $(document).ready(function(){
             
             var produtores = [];
             for(var i = 0 ; i < data.produtores.length ; i++){
-                var row = $("<tr></tr>")
-                    .append("<th>" + data.produtores[i].nome + "</th>");
-                    // .append("<td>" + data.produtores[i].municipio + "</td>");
-
+                var row = $("<tr></tr>").append("<th>" + data.produtores[i].nome + "</th>");
+                
                 if(data.produtores[i].wa)
-                    row.append("<td>" + data.produtores[i].telefone + "<i class=\"fab fa-whatsapp ml-2\" style=\"color: #2ecc71;\"></i></td>");
+                    row.append("<td><a href=\"https://wa.me/55" + data.produtores[i].telefone.replace(/[^\d]/g, '') + "\">" + data.produtores[i].telefone + "<i class=\"fab fa-whatsapp ml-2\" style=\"color: #2ecc71;\"></i></a></td>");
                 else
                     row.append("<td>" + data.produtores[i].telefone + "</td>");
 
-                var  entrega = ""
-                    ,produtos = ""
-                    ,unidades = ""
-                    ,valores = "";
-                for(var j = 0 ; j < data.produtores[i].entrega.length ; j++){
-                    entrega += data.produtores[i].entrega[j];
-
-                    if(j != data.produtores[i].entrega.length - 1)
-                        entrega += "</br>";
-                }
+                var produtos = "";
 
                 for(var j = 0 ; j < data.produtores[i].produtos.length ; j++){
                     produtos += data.produtores[i].produtos[j].nome;
-                    // unidades += data.produtores[i].produtos[j].unidade;
                     
-                    if(data.produtores.tem_preco){
-                        if(data.produtores[i].produtos[j].preco == "-")
-                            valores += "A combinar";
-                        else
-                            valores += "R$ " + data.produtores[i].produtos[j].preco;
-                    }
-
-                    if(j != data.produtores[i].produtos.length - 1){
+                    if(j != data.produtores[i].produtos.length - 1)
                         produtos += "</br>";
-                        // unidades += "</br>";
-                        valores += "</br>";
-                    }
                 }
 
-                if(!data.produtores[i].tem_preco)
-                    valores = "A combinar";
-
-                row
-                    
-                    .append("<td>" + produtos + "</td>");
-                    // .append("<td>" + entrega + "</td>");
-                    // .append("<td>" + unidades + "</td>")
-                    // .append("<td>" + valores + "</td>");
+                row.append("<td>" + produtos + "</td>");
 
                 produtores.push(row);
             }
