@@ -169,7 +169,7 @@
 		]
     },{
 		"nome": "Nathan José",
-		"telefone": "(83) 98646-9805",
+		"telefone": "(83) 98783-6658",
         "entrega": ["A combinar"],
         "municipio": "Pedras de Fogo",
         "tem_precos": false,
@@ -443,6 +443,10 @@
 				"nome": "Ovos de Capoeira",
 				"unidade": "unidade",
 				"preco": "-"
+			},{
+				"nome": "Galinha de Capoeira tratada",
+				"unidade": "unidade",
+				"preco": "-"
 			}
 		]
     },{
@@ -488,6 +492,31 @@
 			},{
 				"nome": "Frutas",
 				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Emerson",
+		"telefone": "(83) 99967-3508",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Queijo coalho",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Queijo manteiga",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Manteiga de garrafa",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Nata",
+				"unidade": "unidade",
 				"preco": "-"
 			}
 		]
