@@ -8,6 +8,7 @@ $(document).ready(function(){
             event.preventDefault();
             event.stopPropagation();
             if(form.checkValidity() === true){
+                console.log("enviando...");
                 var form_contact = $("#form-contact");
                 var url = form_contact.attr('action');
                 $.ajax({
@@ -77,10 +78,11 @@ $(document).ready(function(){
                     valores = "A combinar";
 
                 row
-                    .append("<td>" + entrega + "</td>")
-                    .append("<td>" + produtos + "</td>")
+                    
+                    .append("<td>" + produtos + "</td>");
+                    // .append("<td>" + entrega + "</td>");
                     // .append("<td>" + unidades + "</td>")
-                    .append("<td>" + valores + "</td>");
+                    // .append("<td>" + valores + "</td>");
 
                 produtores.push(row);
             }
