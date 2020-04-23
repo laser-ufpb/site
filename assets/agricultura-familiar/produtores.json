@@ -123,19 +123,42 @@
 		]
     },{
 		"nome": "Anailde de Lima",
-		"telefone": "(83) 98776-9942",
+		"telefone": "(83) 98776-9931",
         "entrega": ["A combinar"],
         "municipio": "João Pessoa",
         "tem_precos": false,
         "wa": true,
 		"produtos": [{
-				"nome": "Ovos de páscoa diversos",
+				"nome": "Bolo integral",
 				"unidade": "unidade",
 				"preco": "-"
-			},
-			{
-				"nome": "Bolos para festa",
+			},{
+				"nome": "Torta de frango",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Quiches",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo de rolo",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Tortas doces",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Cupcakes",
 				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Trufas",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Bolos caseiros",
+				"unidade": "kg",
 				"preco": "-"
 			}
 		]
@@ -150,19 +173,20 @@
 				"nome": "Canjica",
 				"unidade": "unidade",
 				"preco": "-"
-			},
-			{
+			},{
 				"nome": "Pamonha",
 				"unidade": "unidade",
 				"preco": "-"
-			},
-			{
+			},{
 				"nome": "Mucunza",
 				"unidade": "unidade",
 				"preco": "-"
-			},
-			{
+			},{
 				"nome": "Arroz doce",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "<b>Máscara de pano em algodão dupla face</b>",
 				"unidade": "unidade",
 				"preco": "-"
 			}
@@ -305,7 +329,7 @@
 				"unidade": "molho",
 				"preco": "-"
 			},{
-				"nome": "Tuberculos",
+				"nome": "Tubérculos",
 				"unidade": "kg",
 				"preco": "-"
 			},{
@@ -486,7 +510,7 @@
 				"unidade": "kg",
 				"preco": "-"
 			},{
-				"nome": "Tuberculos",
+				"nome": "Tubérculos",
 				"unidade": "kg",
 				"preco": "-"
 			},{
@@ -517,6 +541,93 @@
 			},{
 				"nome": "Nata",
 				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Maria Félix",
+		"telefone": "(83) 99632-0802",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Acerola",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Mamão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Feijão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Inhame",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Coco verde",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Coco seco",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Maracujá",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Limão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Banana (Pacovan, Comprida e Casca Verde)",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Acabate",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Andre do Bode",
+		"telefone": "(83) 98787-6348",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Carne de bode",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Carne de carneiro",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Galinha de capoeira tratada",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Picado de bode e Buxada de bode",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Daniele",
+		"telefone": "(83) 99148-9643",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Feijão verde",
+				"unidade": "kg",
 				"preco": "-"
 			}
 		]
