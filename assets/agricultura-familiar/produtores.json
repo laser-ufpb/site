@@ -273,17 +273,29 @@
 		]
     },{
 		"nome": "Telma Santana ",
-		"telefone": "(83) 98886-8409",
+		"telefone": "(83) 99601-4315",
         "entrega": ["A combinar"],
         "municipio": "Baía da Traição",
         "tem_precos": false,
         "wa": true,
 		"produtos": [{
-				"nome": "Peixes diversos",
+				"nome": "Peixes variados",
 				"unidade": "kg",
 				"preco": "-"
 			},{
-				"nome": "Frutos do mar diversos",
+				"nome": "Marisco",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Carne de caranguejo",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Camarão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Filé de camarão",
 				"unidade": "kg",
 				"preco": "-"
 			}
@@ -420,7 +432,7 @@
 		]
     },{
 		"nome": "Rosinete",
-		"telefone": "(83) 98851-7795",
+		"telefone": "(83) 98794-0584",
         "entrega": ["A combinar"],
         "municipio": "Jacaraú",
         "tem_precos": false,
@@ -628,6 +640,19 @@
 		"produtos": [{
 				"nome": "Feijão verde",
 				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Cozinha Sabores do Mar",
+		"telefone": "(83) 99392-2636",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Marmitas variadas: carnes, galina, frango, figado bovino, Marisco, peixe, camarão e acompanhamentos arroz, macarrão, feijão e saladas.",
+				"unidade": "unidade",
 				"preco": "-"
 			}
 		]
