@@ -651,7 +651,7 @@
         "tem_precos": false,
         "wa": true,
 		"produtos": [{
-				"nome": "Marmitas variadas: carnes, galina, frango, figado bovino, Marisco, peixe, camarão e acompanhamentos arroz, macarrão, feijão e saladas.",
+				"nome": "Marmitas variadas: carnes, galina, frango, <br/>figado bovino, Marisco, peixe, <br/>camarão e acompanhamentos arroz, macarrão,<br/> feijão e saladas.",
 				"unidade": "unidade",
 				"preco": "-"
 			}
