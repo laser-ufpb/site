@@ -444,31 +444,6 @@
 			}
 		]
     },{
-		"nome": "Valmir",
-		"telefone": "(83) 99805-8876",
-        "entrega": ["A combinar"],
-        "municipio": "---",
-        "tem_precos": false,
-        "wa": true,
-		"produtos": [{
-				"nome": "Cajá",
-				"unidade": "kg",
-				"preco": "-"
-			},{
-				"nome": "Ovos de Capoeira",
-				"unidade": "unidade",
-				"preco": "-"
-			},{
-				"nome": "Galinha Caipira",
-				"unidade": "unidade",
-				"preco": "-"
-			},{
-				"nome": "Coco seco",
-				"unidade": "unidade",
-				"preco": "-"
-			}
-		]
-    },{
 		"nome": "Dona Severina",
 		"telefone": "(83) 98827-8872",
         "entrega": ["A combinar"],
@@ -653,6 +628,31 @@
 		"produtos": [{
 				"nome": "Marmitas variadas: carnes, galina, frango, <br/>figado bovino, Marisco, peixe, <br/>camarão e acompanhamentos arroz, macarrão,<br/> feijão e saladas.",
 				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Giva",
+		"telefone": "(83) 98624-6564",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Galinha de capoeira abatida",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Guiné",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Peru",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Perua",
+				"unidade": "kg",
 				"preco": "-"
 			}
 		]
