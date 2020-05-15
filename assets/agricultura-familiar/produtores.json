@@ -99,7 +99,7 @@
 			}
 		]
     },{
-		"nome": "Tereza Beatriz",
+		"nome": "Márcia Machado",
 		"telefone": "(83) 98794-7697",
         "entrega": ["A combinar"],
         "municipio": "Cabedelo",
@@ -111,12 +111,12 @@
 				"preco": "-"
 			},
 			{
-				"nome": "Hortaliças",
+				"nome": "Mudas de Hortaliças",
 				"unidade": "unidade",
 				"preco": "-"
 			},
 			{
-				"nome": "Flores",
+				"nome": "Mudas de Flores",
 				"unidade": "unidade",
 				"preco": "-"
 			}
@@ -656,5 +656,74 @@
 				"preco": "-"
 			}
 		]
+    },{
+		"nome": "Demiana Artesã",
+		"telefone": "(83) 99646-1991",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+                "nome": "<b>Máscara de pano em algodão dupla face</b>",
+                "unidade": "unidade",
+                "preco": "-"
+            },{
+				"nome": "Artesanatos para casa e decoração",
+				"unidade": "unidade",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Rosemary Orgânicos",
+		"telefone": "(83) 99137-1312",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Feijão verde",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Abacate",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Melância",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Manga Rosely",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Mamão Avaí",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Banana de cozinhar",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Macaxeira",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Polpa de frutas",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Galinha abatida",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Massa de mandioca",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Coco ralado",
+				"unidade": "kg",
+				"preco": "-"
+			}]
     }]
 }
