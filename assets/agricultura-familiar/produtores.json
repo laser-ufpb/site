@@ -1,7 +1,7 @@
 {
 	"produtores": [{
 		"nome": "João Trajano",
-		"telefone": "(83) 98102-4704",
+		"telefone": "(83) 98129-2920",
         "entrega": ["A combinar"],
         "municipio": "Alhandra",
         "tem_precos": false,
@@ -352,7 +352,7 @@
 		]
     },{
 		"nome": "Everaldo Nunes",
-		"telefone": "(83) 99900-0202",
+		"telefone": "(83) 99686-2634",
         "entrega": ["A combinar"],
         "municipio": "Sapé",
         "tem_precos": false,
@@ -445,7 +445,7 @@
 		]
     },{
 		"nome": "Dona Severina",
-		"telefone": "(83) 98827-8872",
+		"telefone": "(83) 98866-2243",
         "entrega": ["A combinar"],
         "municipio": "---",
         "tem_precos": false,
@@ -461,7 +461,7 @@
 			}
 		]
     },{
-		"nome": "Leonardo",
+		"nome": "Leonardo (Orgânicos)",
 		"telefone": "(83) 98649-5441",
         "entrega": ["A combinar"],
         "municipio": "---",
@@ -657,23 +657,6 @@
 			}
 		]
     },{
-		"nome": "Demiana Artesã",
-		"telefone": "(83) 99646-1991",
-        "entrega": ["A combinar"],
-        "municipio": "---",
-        "tem_precos": false,
-        "wa": true,
-		"produtos": [{
-                "nome": "<b>Máscara de pano em algodão dupla face</b>",
-                "unidade": "unidade",
-                "preco": "-"
-            },{
-				"nome": "Artesanatos para casa e decoração",
-				"unidade": "unidade",
-				"preco": "-"
-			}
-		]
-    },{
 		"nome": "Rosemary Orgânicos",
 		"telefone": "(83) 99137-1312",
         "entrega": ["A combinar"],
@@ -725,5 +708,82 @@
 				"unidade": "kg",
 				"preco": "-"
 			}]
+    },{
+		"nome": "Maiara (Orgânicos)",
+		"telefone": "(83) 99115-6338",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Mamão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Macaxeira",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Cara",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Batata doce",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Couve",
+				"unidade": "molho",
+				"preco": "-"
+			},{
+				"nome": "Alface",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Coentro",
+				"unidade": "molho",
+				"preco": "-"
+			},{
+				"nome": "Rúcula",
+				"unidade": "molho",
+				"preco": "-"
+			},{
+				"nome": "Feijão verde",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Berinjela",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Abobrinha",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Jerimum",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Banana",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Limão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Ovos de capoeira",
+				"unidade": "unidade",
+				"preco": "-"
+			},{
+				"nome": "Tomate",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Macaxeira",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
     }]
 }
