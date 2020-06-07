@@ -907,7 +907,81 @@
         "tem_precos": false,
         "wa": true,
 		"produtos": [{
+				"nome": "Laço de bico de pato",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Laço e flor na tiara",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Laço e flor na faixa para bebê",
+				"unidade": "kg",
+				"preco": "-"
+			},{
 				"nome": "<b>Máscaras em algodão dupla face</b>",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Ruthy Hellen Artesã",
+		"telefone": "(83) 98854-1545",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Caixa para chocolate",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Caixas para docinhos",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Caixas para presentes",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Josinete Artesão",
+		"telefone": "(83) 99665-1422",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Peças em chochê",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Tiaras de cabelo",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Laços",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Turbantes",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Xuxinhas",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Conjuntos de sousplat",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Máscaras de vários modelos</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Almofadas decoradas",
 				"unidade": "kg",
 				"preco": "-"
 			}
