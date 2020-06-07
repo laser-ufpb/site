@@ -785,5 +785,132 @@
 				"preco": "-"
 			}
 		]
+    },{
+		"nome": "Jaciara Lima",
+		"telefone": "(83) 99698-2890",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Doce de abacaxi",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de abobora",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de banana",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de caju",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de leite",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de mamão c/ coco",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de gergilim",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de goiaba",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de jaca",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doce de coco c/ leite",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Mungunzá doce</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Mungunzá salgado</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Beijú de forno</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolos",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Viviane",
+		"telefone": "(83) 98805-3505",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "Bolo de cenoura c/ chocolate",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo fofo",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Bolo de milho cremoso</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "<b>Bolo de fubá</b>",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo de chocolate",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo mesclado",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo vulcão",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Bolo de pote",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Empadas",
+				"unidade": "kg",
+				"preco": "-"
+			},{
+				"nome": "Doces e salgados",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
+    },{
+		"nome": "Ana Maria Artesã",
+		"telefone": "(83) 98820-0744",
+        "entrega": ["A combinar"],
+        "municipio": "---",
+        "tem_precos": false,
+        "wa": true,
+		"produtos": [{
+				"nome": "<b>Máscaras em algodão dupla face</b>",
+				"unidade": "kg",
+				"preco": "-"
+			}
+		]
     }]
 }
