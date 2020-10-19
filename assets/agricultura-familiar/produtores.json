@@ -1,43 +1,5 @@
 {
 	"produtores": [{
-		"nome": "João Trajano",
-		"telefone": "(83) 98129-2920",
-        "entrega": ["A combinar"],
-        "municipio": "Alhandra",
-        "tem_precos": false,
-        "wa": true,
-		"produtos": [{
-				"nome": "Inhame",
-				"unidade": "kg",
-				"preco": "-"
-			},
-			{
-				"nome": "Macaxeira",
-				"unidade": "kg",
-				"preco": "-"
-			},
-			{
-				"nome": "Acerola",
-				"unidade": "kg",
-				"preco": "-"
-			},
-			{
-				"nome": "Cara",
-				"unidade": "kg",
-				"preco": "-"
-			},
-			{
-				"nome": "Banana",
-				"unidade": "kg",
-				"preco": "-"
-			},
-			{
-				"nome": "Abacaxi",
-				"unidade": "kg",
-				"preco": "-"
-			}
-		]
-    },{
 		"nome": "Everaldo Júnior",
 		"telefone": "(83) 98862-5342",
         "entrega": ["A combinar"],
